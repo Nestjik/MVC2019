@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <img src="https://boinc.berkeley.edu/logo/boinc_600.jpg" />
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <div>
+        <a href="~/Views/LayoutSection/Stranica1.cshtml">Natrag na Stranicu 1</a><br />
+        <a href="~/Views/LayoutSection/Stranica2.cshtml">Natrag na Stranicu 2</a>
+    </div>
+    @RenderSection("Foot", false)
+</body>
+</html>
